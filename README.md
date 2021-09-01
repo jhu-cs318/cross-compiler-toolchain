@@ -23,3 +23,6 @@ i386-elf-gcc --version
 cd ~/os/pintos/src/threads
 make
 ```
+
+If the tools work, put `export PATH=$HOME/os/toolchain/x86_64/bin:$PATH` 
+in your `.bashrc` or `.zshrc`.
