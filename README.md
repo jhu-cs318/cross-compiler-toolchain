@@ -22,7 +22,12 @@ export PATH=$HOME/os/toolchain/x86_64/bin:$PATH
 i386-elf-gcc --version
 cd ~/os/pintos/src/threads
 make
+cd build
+pintos --bochs -- run alarm-zero
 ```
 
-If the tools work, put `export PATH=$HOME/os/toolchain/x86_64/bin:$PATH` 
-in your `.bashrc` or `.zshrc`.
+You should see the Pintos compilation finishes successfully and Bochs window 
+shows up.
+
+**If the tools work, put `export PATH=$HOME/os/toolchain/x86_64/bin:$PATH` 
+in your `.bashrc` or `.zshrc`**
